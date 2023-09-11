@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background: #96b3b9db;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* /////  CONTAINER  ///// */
+.container {
+    width: 100%;
+    max-width: 950px;
+    padding: 0px 15px;
+
+    margin: 0 auto;
+}

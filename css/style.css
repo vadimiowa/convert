@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background: rgba(150, 179, 185, 0.8588235294);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* /////  CONTAINER  ///// */
+.container {
+  width: 100%;
+  max-width: 950px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: red;
+}
+.header h1 {
+  margin: 0;
+}
+
+.convert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  margin: auto;
+  margin-top: 100px;
+  transition: background 0.2s linear;
+}
+.convert h1 {
+  color: #000;
+  font-size: 25px;
+}
+
+.convert:hover {
+  background: red;
+}/*# sourceMappingURL=style.css.map */

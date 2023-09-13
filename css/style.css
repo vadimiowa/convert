@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: rgba(150, 179, 185, 0.8588235294);
+  background: #fff;
 }
 
 *,
@@ -20,29 +20,67 @@ body {
 .header {
   width: 100%;
   height: 50px;
-  background: red;
-}
-.header h1 {
-  margin: 0;
 }
 
 .convert {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 300px;
-  height: 200px;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  max-width: 700px;
+  width: 100%;
+  height: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);
+  margin: 0 auto;
   background: #fff;
-  margin: auto;
-  margin-top: 100px;
-  transition: background 0.2s linear;
-}
-.convert h1 {
-  color: #000;
-  font-size: 25px;
 }
 
-.convert:hover {
-  background: red;
+.convert__show {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  background: #fff;
+}
+.convert__show .convert__show__currency {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 50%;
+  font-size: 60px;
+}
+
+.convert__exgenge {
+  display: flex;
+  justify-content: space-between;
+}
+.convert__exgenge .currency {
+  display: flex;
+  justify-content: center;
+}
+.convert__exgenge input {
+  font-size: 30px;
+  width: 70%;
+}
+
+.top {
+  color: green;
+}
+
+.bottom {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .convert__show {
+    display: block;
+  }
+  .convert__exgenge {
+    display: block;
+  }
+  .currency {
+    margin-bottom: 50px;
+  }
+  .convert__show__currency {
+    padding-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

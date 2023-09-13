@@ -8,17 +8,37 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h1>I get new results here</h1>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="convert">
-            <h1>Will she suppert this project ?</h1>
+<div class="header"></div>
+
+<div class="container">
+    <div class="convert">
+        <div class="convert__show">
+            <div class="convert__show__currency" data-value="USD">__.__</div>
+            <div class="convert__show__currency" data-value="EUR">__.__</div>
+        </div>
+
+        <div class="convert__exgenge">
+            <div class="currency">
+                <input class="input" type="number">
+                <select class="selector">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="currency">
+                <input class="resualt" type="number">
+                <select class="selector">
+                    <option value="uan">UAN</option>
+                </select>
+            </div>
         </div>
     </div>
+</div>
+
+<script src="script/app.js"></script>
+<script src="script/convert.js"></script>
+<script src="script/api.js"></script>
 
 </body>
 </html>

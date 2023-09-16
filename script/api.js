@@ -19,9 +19,6 @@ async function getCurrency() {
     if(course.USD.rate > course.USD.previous) {
         elementUSD.classList.add("top");
         elementEUR.classList.add("top");
-    } else if(course.USD.rate == course.USD.rate) {
-        elementUSD.style.color = "#000";
-        elementEUR.style.color = "#000";
     } else {
         elementUSD.classList.add("bottom");
         elementEUR.classList.add("bottom");

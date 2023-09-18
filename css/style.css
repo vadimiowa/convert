@@ -27,7 +27,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 20px;
   max-width: 700px;
   width: 100%;
   height: 500px;
@@ -96,6 +95,39 @@ body {
 
 .bottom {
   color: red;
+}
+
+.showCurrency {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 55px;
+  background: #fff;
+  overflow: hidden;
+}
+.showCurrency .showCurrency__get {
+  display: flex;
+  background: #a8accc;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 30px 0px 30px;
+  position: relative;
+  transition: 0.5s;
+}
+.showCurrency .current__currency {
+  padding: 30px 0px 30px 0px;
+  font-size: 25px;
+}
+.showCurrency .nameCurrencyGet {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0px 10px 0px 0px;
 }
 
 @media (max-width: 600px) {

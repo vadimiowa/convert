@@ -1,7 +1,5 @@
 document.addEventListener("touchstart", handleTouchStart, false);
-document.addEventListener("touchmove", handleTouchMove, false);
-
-const swipeObject = document.querySelector(".showCurrency");
+document.querySelector(".showCurrency").addEventListener("touchmove", handleTouchMove, false);
 
 let x1 = null;
 let y1 = null;
@@ -14,11 +12,19 @@ function handleTouchStart(event) {
     //console.log(x1, y1);
 }
 
+let getPx = 0;
+
 function handleTouchMove(event) {
     if(!x1 || !y1) {
         return false;
     }
 
+    getPx = getPx + 180;
+    if(getPx > 541) {
+        getPx = 0;
+    }
+
+    console.log(getPx);
     let x2 = event.touches[0].clientX;
     let y2 = event.touches[0].clientY;
     //console.log(x2, y2);
@@ -29,15 +35,7 @@ function handleTouchMove(event) {
     for(let i = 0; i < blocks.length; i++)
 
     if(Math.abs(xDiff) > Math.abs(yDiff)) {
-
-        if(xDiff < 0) blocks[i].style.left = "-500px";
-        else blocks[i].style.left = "0px";
-
-    } else {
-
-        /* if(yDiff > 0) swipeObject.textContent = ("top");
-        else swipeObject.textContent = ("down"); */
-
+        if(xDiff < 0) blocks[i].style.left = -getPx + "px";
     }
 
     x1 = null;

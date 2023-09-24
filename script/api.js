@@ -31,23 +31,48 @@ async function getCurrency() {
     elementCHF.textContent = course.CHF.rate.toFixed(2);
     elementMXN.textContent = course.MXN.rate.toFixed(2);
 
-    if(course.rate > course.previous) {
+    if(course.USD.rate > course.USD.previous) {
         elementUSD.classList.add("top");
-        elementEUR.classList.add("top");
-        elementGBP.classList.add("top");
-        elementPLN.classList.add("top");
-        elementSEK.classList.add("top");
-        elementCHF.classList.add("top");
-        elementMXN.classList.add("top");
     } else {
         elementUSD.classList.add("bottom");
+    }
+
+    if(course.EUR.rate > course.EUR.previous) {
+        elementEUR.classList.add("top");
+    } else {
         elementEUR.classList.add("bottom");
+    }
+
+    if(course.GBP.rate > course.GBP.previous) {
+        elementGBP.classList.add("top");
+    } else {
         elementGBP.classList.add("bottom");
+    }
+
+    if(course.PLN.rate > course.PLN.previous) {
+        elementPLN.classList.add("top");
+    } else {
         elementPLN.classList.add("bottom");
+    }
+
+    if(course.SEK.rate > course.SEK.previous) {
+        elementSEK.classList.add("top");
+    } else {
         elementSEK.classList.add("bottom");
+    }
+
+    if(course.CHF.rate > course.CHF.previous) {
+        elementCHF.classList.add("top");
+    } else {
         elementCHF.classList.add("bottom");
+    }
+
+    if(course.MXN.rate > course.MXN.previous) {
+        elementMXN.classList.add("top");
+    } else {
         elementMXN.classList.add("bottom");
     }
+
 }
 
 getCurrency();

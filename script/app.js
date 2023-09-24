@@ -6,6 +6,10 @@ input.addEventListener("input", function() {
     resualt.value = parseFloat(input.value) * course[selector.value].rate.toFixed(2);
 })
 
+resualt.addEventListener("input", function() {
+    input.value = parseFloat(resualt.value) / course[selector.value].rate.toFixed(2);
+})
+
 selector.addEventListener("change", function() {
     resualt.value = parseFloat(input.value) * course[selector.value].rate.toFixed(2);
 })

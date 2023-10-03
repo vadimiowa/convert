@@ -7,6 +7,7 @@ const elementPLN = document.querySelector('[data-value="PLN"]');
 const elementSEK = document.querySelector('[data-value="SEK"]');
 const elementCHF = document.querySelector('[data-value="CHF"]');
 const elementMXN = document.querySelector('[data-value="MXN"]');
+const elementCAD = document.querySelector('[data-value="CAD"]');
 
 async function getCurrency() {
     const results = await fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json");
@@ -20,6 +21,7 @@ async function getCurrency() {
     course.SEK = currency[20];
     course.CHF = currency[21];
     course.MXN = currency[13];
+    course.CAD = currency[1];
 
     console.log(course);
 
@@ -30,6 +32,7 @@ async function getCurrency() {
     elementSEK.textContent = course.SEK.rate.toFixed(2);
     elementCHF.textContent = course.CHF.rate.toFixed(2);
     elementMXN.textContent = course.MXN.rate.toFixed(2);
+    elementCAD.textContent = course.CAD.rate.toFixed(2);
 
     if(course.USD.rate > course.USD.previous) {
         elementUSD.classList.add("top");
@@ -71,6 +74,12 @@ async function getCurrency() {
         elementMXN.classList.add("top");
     } else {
         elementMXN.classList.add("bottom");
+    }
+
+    if(course.CAD.rate > course.CAD.previous) {
+        elementCAD.classList.add("top");
+    } else {
+        elementCAD.classList.add("bottom");
     }
 
 }

@@ -1,4 +1,41 @@
 .header {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50px;
+
+    .header__content {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
 }
+
+.header__mood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+    border-radius: 10px;
+    background: #737b88;
+
+    .header__moon {
+        display: block;
+        height: auto;
+        width: 20px;
+    }
+    .header__sun {
+        display: none;
+        height: auto;
+        width: 20px;
+    }
+}
+
+.none {
+    background: #737b88;
+}
+
+

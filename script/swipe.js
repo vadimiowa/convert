@@ -19,8 +19,8 @@ function handleTouchMove(event) {
         return false;
     }
 
-    getPx = getPx + 180;
-    if(getPx > 541) {
+    getPx = getPx + 350;
+    if(getPx > 800) {
         getPx = 0;
     }
 

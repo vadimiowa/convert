@@ -37,3 +37,41 @@ mood.addEventListener("click", function() {
     }
 })
 
+let burger = document.querySelector(".burger");
+let menu = document.querySelector(".burger__menu");
+let menuBackground = document.querySelector(".burger__background");
+let menuClouse = document.querySelector(".menu__close");
+
+
+burger.addEventListener("click", function() {
+    menu.classList.add("active");
+    menuBackground.classList.add("active");
+})
+
+menuClouse.addEventListener("click", function() {
+    menu.classList.remove("active");
+    menuBackground.classList.remove("active");
+})
+
+menuBackground.addEventListener("click", function() {
+    menu.classList.remove("active");
+    menuBackground.classList.remove("active");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

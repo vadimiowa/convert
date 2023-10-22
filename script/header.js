@@ -42,7 +42,6 @@ let menu = document.querySelector(".burger__menu");
 let menuBackground = document.querySelector(".burger__background");
 let menuClouse = document.querySelector(".menu__close");
 
-
 burger.addEventListener("click", function() {
     menu.classList.add("active");
     menuBackground.classList.add("active");

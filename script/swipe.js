@@ -19,7 +19,7 @@ function handleTouchMove(event) {
         return false;
     }
 
-    getPx = getPx + 350;
+    getPx = getPx + 175;
     if(getPx > 800) {
         getPx = 0;
     }
@@ -41,3 +41,49 @@ function handleTouchMove(event) {
     x1 = null;
     y1 = null;
 }
+
+let menuInSaid = document.querySelector(".swipe__menu");
+menuInSaid.addEventListener("touchmove", moveInfo, false);
+
+let moveMath = 0;
+
+function moveInfo(event) {
+    if(!x1 || !y1) {
+        return false;
+    }
+
+    moveMath = moveMath + 100;
+    if(moveMath > 101) {
+        moveMath = 0;
+    }
+
+    let x2 = event.touches[0].clientX;
+    let y2 = event.touches[0].clientY;
+    let xDiff = x2 - x1;
+    let yDiff = y2 - y1;
+
+    if(Math.abs(xDiff) > Math.abs(yDiff)) {
+        if(xDiff < 0) menuInSaid.style.left = -moveMath + "%";
+    }
+
+    x1 = null;
+    y1 = null;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

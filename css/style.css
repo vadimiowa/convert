@@ -115,7 +115,7 @@ body {
   flex-direction: column;
   width: 45%;
   height: 100vh;
-  background: #ccc;
+  background: linear-gradient(#fffccb, #bfa6ae);
   position: absolute;
   top: 0;
   left: -45%;
@@ -186,26 +186,27 @@ body {
   justify-content: center;
 }
 .convert__exgenge input {
-  font-size: 35px;
+  color: #000;
+  font-size: 32px;
+  padding: 5px;
   width: 70%;
   font-family: roboto;
-  border: 1px solid #000;
-  border-right: 0;
+  background: rgba(255, 255, 255, 0.5294117647);
+  border: none;
+  outline: none;
+  margin-right: 10px;
 }
 .convert__exgenge input:focus {
-  outline: 0;
-  border-color: red;
+  background: rgba(255, 255, 255, 0.7294117647);
 }
 .convert__exgenge .selector {
   color: #000;
   font-size: 20px;
   font-weight: 400;
   font-family: roboto;
-  background: #ccc;
-  border: 1px solid #000;
-}
-.convert__exgenge .selector:focus {
-  border-color: red;
+  background: rgba(255, 255, 255, 0.5294117647);
+  border: none;
+  outline: none;
 }
 
 .top {
@@ -338,42 +339,25 @@ body {
   overflow: hidden;
 }
 
-.swipe__block {
-  position: relative;
-  left: 0;
-  top: 0;
-}
-
 .swipe__menu {
-  position: relative;
   display: flex;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 30px;
-  transition: 0.3s;
-  left: 0;
-}
-
-.swipe__menu:last-child {
-  margin-bottom: 0;
 }
 
 .swipe__content {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100px;
+  height: 160px;
   background: red;
-  opacity: 0.8;
-  margin-top: 10px;
-  border-radius: 30px;
+  margin: 5px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  transition: background 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.swipe__content--left {
-  left: 100%;
-  background: greenyellow;
+.swipe__content:hover {
+  background: rgba(156, 179, 109, 0.6);
+  border-radius: 45px;
 }
 
 @media (max-width: 600px) {
@@ -398,5 +382,45 @@ body {
   .burger__menu {
     width: 80%;
     left: -80%;
+  }
+  /* ////////////////////////MENU//////////////////////// */
+  .swipe__block {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+  .swipe__menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    left: 0;
+  }
+  .swipe__menu:last-child {
+    margin-bottom: 0;
+  }
+  .swipe__content {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(28, 36, 39, 0.8);
+    opacity: 0.8;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin: 0;
+  }
+  .swipe__content--left {
+    left: 100%;
+    background: rgba(65, 95, 21, 0.6588235294);
+  }
+  .swipe__content--leftNext {
+    left: 200%;
+    background: #fff;
   }
 }/*# sourceMappingURL=style.css.map */

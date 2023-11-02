@@ -43,26 +43,27 @@
         justify-content: center;
     }
     input {
-        font-size: 35px;
+        color: #000;
+        font-size: 32px;
+        padding: 5px;
         width: 70%;
         font-family: roboto;
-        border: 1px solid #000;
-        border-right: 0;
+        background: #ffffff87;
+        border: none;
+        outline: none;
+        margin-right: 10px;
     }
     input:focus {
-        outline: 0;
-        border-color: red;
+        background: #ffffffba;
     }
     .selector {
         color: #000;
         font-size: 20px;
         font-weight: 400;
         font-family: roboto;
-        background: #ccc;
-        border: 1px solid #000;
-    }
-    .selector:focus {
-        border-color: red;
+        background: #ffffff87;
+        border: none;
+        outline: none;
     }
 }
 

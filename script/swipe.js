@@ -42,6 +42,10 @@ function handleTouchMove(event) {
     y1 = null;
 }
 
+
+
+
+////////////////////////////////////////////////////////////////////////////
 let menuInSaid = document.querySelector(".swipe__menu");
 menuInSaid.addEventListener("touchmove", moveInfo, false);
 
@@ -53,7 +57,7 @@ function moveInfo(event) {
     }
 
     moveMath = moveMath + 100;
-    if(moveMath > 101) {
+    if(moveMath > 201) {
         moveMath = 0;
     }
 
@@ -70,6 +74,10 @@ function moveInfo(event) {
     y1 = null;
 
 }
+
+
+
+
 
 
 

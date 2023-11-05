@@ -43,15 +43,10 @@ function handleTouchMove(event) {
 }
 
 
-
-
 ////////////////////////////////////////////////////////////////////////////
-let menuInSaid = document.querySelector(".swipe__menu");
-menuInSaid.addEventListener("touchmove", moveInfo, false);
-
 let moveMath = 0;
-
-function moveInfo(event) {
+function aboutSlider(event) {
+    let target = event.currentTarget;
     if(!x1 || !y1) {
         return false;
     }
@@ -67,13 +62,19 @@ function moveInfo(event) {
     let yDiff = y2 - y1;
 
     if(Math.abs(xDiff) > Math.abs(yDiff)) {
-        if(xDiff < 0) menuInSaid.style.left = -moveMath + "%";
+        if(xDiff < 0) {
+            target.style.left = -moveMath + "%";
+        }
     }
 
     x1 = null;
     y1 = null;
-
 }
+
+let menuInSaid = document.querySelectorAll(".swipe__menu");
+menuInSaid.forEach((item) => {
+    item.addEventListener("touchmove", aboutSlider, false);
+})
 
 
 

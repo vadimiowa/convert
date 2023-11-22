@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"></head>
+    <title>Convert</title>
 <body>
 
 
@@ -31,95 +31,71 @@
     <div class="menu__close">
         <img src="./img/close.png" alt="" class="close__img">
     </div>
-
-    <div class="about__menu">
-        <div class="swipe__block">
-            <div class="swipe__menu">
-                <div class="swipe__content">One</div>
-                <div class="swipe__content swipe__content--left">Two</div>
-                <div class="swipe__content swipe__content--leftNext">Three</div>
-            </div>
-        </div>
-        <div class="swipe__block">
-            <div class="swipe__menu">
-                <div class="swipe__content">One</div>
-                <div class="swipe__content swipe__content--left">Two</div>
-                <div class="swipe__content swipe__content--leftNext">Three</div>
-            </div>
-        </div>
-        <div class="swipe__block">
-            <div class="swipe__menu">
-                <div class="swipe__content">One</div>
-                <div class="swipe__content swipe__content--left">Two</div>
-                <div class="swipe__content swipe__content--leftNext">Three</div>
-            </div>
-        </div>
-    </div>
 </div>
 
-<div class="container">
-    <div class="convert">
-        <div class="convert__show">
-            <div class="convert__show__currency">
-                <h1 class="nameCurrency">(USD):</h1>
-                <div class="show__currency" data-value="USD">__.__</div>
-            </div>
-            <div class="convert__show__currency">
-                <h1 class="nameCurrency">(EUR):</h1>
-                <div class="show__currency" data-value="EUR">__.__</div>
-            </div>
-        </div>
-
-        <div class="convert__exgenge">
-            <div class="currency">
-                <input class="input" type="number">
-                <select class="selector">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                </select>
-            </div>
-            <div class="currency">
-                <input class="resualt" type="number">
-                <select class="selector">
-                    <option value="UAH">UAH</option>
-                </select>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="oneSlider">
-        <div class="bottomShowFulse"></div>
-            <div class="showBlock">
-                <div class="showCurrency">
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(GBP):</div>
-                        <div class="current__currency" data-value="GBP">__.__</div>
-                    </div>
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(PLN):</div>
-                        <div class="current__currency" data-value="PLN">__.__</div>
-                    </div>
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(SEK):</div>
-                        <div class="current__currency" data-value="SEK">__.__</div>
-                    </div>
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(CHF):</div>
-                        <div class="current__currency" data-value="CHF">__.__</div>
-                    </div>
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(MXN):</div>
-                        <div class="current__currency" data-value="MXN">__.__</div>
-                    </div>
-                    <div class="showCurrency__get">
-                        <div class="nameCurrencyGet">(CAD):</div>
-                        <div class="current__currency" data-value="CAD">__.__</div>
-                    </div>
+<div class="content">
+    <div class="container">
+        <div class="convert">
+            <div class="convert__show">
+                <div class="convert__show__currency">
+                    <h1 class="nameCurrency">(USD):</h1>
+                    <div class="show__currency" data-value="USD">__.__</div>
+                </div>
+                <div class="convert__show__currency">
+                    <h1 class="nameCurrency">(EUR):</h1>
+                    <div class="show__currency" data-value="EUR">__.__</div>
                 </div>
             </div>
-        <div class="bottomShowTrue"></div>
+
+            <div class="convert__exgenge">
+                <div class="currency">
+                    <input class="input" type="number">
+                    <select class="selector">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+                <div class="currency">
+                    <input class="resualt" type="number">
+                    <select class="selector">
+                        <option value="UAH">UAH</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="bottomShowFulse"></div>
+        <div class="showBlock">
+            <div class="showCurrency">
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(GBP):</div>
+                    <div class="current__currency" data-value="GBP">__.__</div>
+                </div>
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(PLN):</div>
+                    <div class="current__currency" data-value="PLN">__.__</div>
+                </div>
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(SEK):</div>
+                    <div class="current__currency" data-value="SEK">__.__</div>
+                </div>
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(CHF):</div>
+                    <div class="current__currency" data-value="CHF">__.__</div>
+                </div>
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(MXN):</div>
+                    <div class="current__currency" data-value="MXN">__.__</div>
+                </div>
+                <div class="showCurrency__get">
+                    <div class="nameCurrencyGet">(CAD):</div>
+                    <div class="current__currency" data-value="CAD">__.__</div>
+                </div>
+            </div>
+        </div>
+    <div class="bottomShowTrue"></div>
     </div>
 </div>
 

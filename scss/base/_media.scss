@@ -14,64 +14,34 @@
     .convert__show__currency {
         padding: 25px 0px 25px 0px;
     }
+    .slider {
+        display: flex;
+        width: 100%;
+        max-width: 332px;
+        margin: 0 auto;
+    }
 
     .bottomShowFulse {
-        display: none;
+        position: absolute;
+        left: 20px;
+        top: 690px;
+        width: 55px;
+        height: 50px;
+        margin: 0;
     }
     .bottomShowTrue {
-        display: none;
+        position: absolute;
+        right: 20px;
+        top: 690px;
+        width: 55px;
+        height: 50px;
+        margin: 0;
     }
+
     .burger__menu {
         width: 80%;
         left: -80%;
     }
 
     /* ////////////////////////MENU//////////////////////// */
-    .swipe__block {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 15px;
-    }
-
-    .swipe__menu {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 120px;
-        margin-bottom: 30px;
-        transition: 0.3s;
-        left: 0;
-    }
-    .swipe__menu:last-child {
-        margin-bottom: 0;
-    }
-
-    .swipe__content {
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        background: #1c2427cc;
-        opacity: 0.8;
-        margin-top: 10px;
-        border-radius: 30px;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
-        font-family: roboto;
-        font-weight: 600;
-        color: #42271a;
-    }
-    .swipe__content--left {
-        left: 100%;
-        background: #415f15a8;
-    }
-    .swipe__content--leftNext {
-        left: 200%;
-        background: #fff;
-    }
 }

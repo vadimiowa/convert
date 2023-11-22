@@ -1,4 +1,4 @@
-document.addEventListener("touchstart", handleTouchStart, false);
+/* document.addEventListener("touchstart", handleTouchStart, false);
 document.querySelector(".showCurrency").addEventListener("touchmove", handleTouchMove, false);
 
 let x1 = null;
@@ -40,11 +40,11 @@ function handleTouchMove(event) {
 
     x1 = null;
     y1 = null;
-}
+} */
 
 
 ////////////////////////////////////////////////////////////////////////////
-let moveMath = 0;
+/* let moveMath = 0;
 function aboutSlider(event) {
     let target = event.currentTarget;
     if(!x1 || !y1) {
@@ -74,7 +74,7 @@ function aboutSlider(event) {
 let menuInSaid = document.querySelectorAll(".swipe__menu");
 menuInSaid.forEach((item) => {
     item.addEventListener("touchmove", aboutSlider, false);
-})
+}) */
 
 
 

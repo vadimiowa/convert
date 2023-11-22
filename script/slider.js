@@ -4,19 +4,19 @@ let buttomNext = document.querySelector(".bottomShowTrue");
 let offset = 0;
 
 buttomNext.addEventListener("click", function() {
-    offset = offset + 530;
-    if(offset > 531) {
+    offset = offset + 100;
+    if(offset > 201) {
         offset = 0;
     }
-    sliderLine.style.right = offset + "px";
+    sliderLine.style.right = offset + "%";
 })
 
 buttomBack.addEventListener("click", function() {
-    offset = offset + 530;
+    offset = offset + 100;
     if(offset = 0) {
         offset = 0;
     }
-    sliderLine.style.right = -offset + "px";
+    sliderLine.style.right = -offset + "%";
 })
 
 

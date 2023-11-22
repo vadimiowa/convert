@@ -1,0 +1,77 @@
+.slider {
+    display: flex;
+    width: 100%;
+    max-width: 477px;
+    margin: 0 auto;
+}
+
+.showBlock {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.showCurrency {
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: 0.5s;
+}
+
+.showCurrency__get {
+    display: flex;
+    background: rgb(115, 123, 136);
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.nameCurrencyGet {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.current__currency {
+    font-size: 35px;
+}
+
+/* BOTTOM BOTTOM */
+.bottomShowFulse {
+    display: flex;
+    width: 77px;
+    height: 50px;
+    background: rgb(115, 123, 136);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-right: 20px;
+}
+.bottomShowTrue {
+    display: flex;
+    width: 77px;
+    height: 50px;
+    background: rgb(115, 123, 136);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.bottomShowFulse:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    rotate: -45deg;
+}
+.bottomShowTrue:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    rotate: 135deg;
+}

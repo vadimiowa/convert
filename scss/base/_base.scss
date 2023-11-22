@@ -14,8 +14,12 @@ body {
 /* /////  CONTAINER  ///// */
 .container {
     width: 100%;
-    max-width: 950px;
+    max-width: 800px;
     padding: 0px 15px;
 
     margin: 0 auto;
+}
+
+.content {
+    margin-top: 15px;
 }

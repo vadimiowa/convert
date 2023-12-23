@@ -32,3 +32,34 @@ selector.addEventListener("change", function() {
 
     resualt.value = show;
 }) */
+
+
+/* POP UP */
+
+let popUpContent = document.querySelector(".popUpContent");
+let popUpBottomUsd = document.querySelector(".popUp__inform").addEventListener("click", function() {
+    popUpContent.classList.add("active");
+});
+
+popUpContent.addEventListener("click", function() {
+    popUpContent.classList.remove("active");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-const sliderLine = document.querySelector(".showCurrency");
+/* const sliderLine = document.querySelector(".showCurrency");
 let buttomBack = document.querySelector(".bottomShowFulse");
 let buttomNext = document.querySelector(".bottomShowTrue");
 let offset = 0;
@@ -17,7 +17,7 @@ buttomBack.addEventListener("click", function() {
         offset = 0;
     }
     sliderLine.style.right = -offset + "%";
-})
+}) */
 
 
 

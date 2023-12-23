@@ -2,7 +2,6 @@ body {
   margin: 0;
   background: #fff;
   font-family: roboto;
-  overflow: hidden;
 }
 
 *,
@@ -333,8 +332,8 @@ body {
 .popUpContent {
   display: flex;
   position: absolute;
-  top: -100%;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -356,7 +355,7 @@ body {
 .popUpContent.active {
   display: flex;
   position: absolute;
-  top: 0;
+  left: 0;
 }
 
 @media (max-width: 600px) {
@@ -381,7 +380,7 @@ body {
   .bottomShowFulse {
     position: absolute;
     left: 20px;
-    top: 690px;
+    bottom: 10px;
     width: 55px;
     height: 50px;
     margin: 0;
@@ -389,7 +388,7 @@ body {
   .bottomShowTrue {
     position: absolute;
     right: 20px;
-    top: 690px;
+    bottom: 10px;
     width: 55px;
     height: 50px;
     margin: 0;

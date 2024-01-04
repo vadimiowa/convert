@@ -223,14 +223,21 @@ body {
 
 .slider {
   display: flex;
+  position: absolute;
+  bottom: 107px;
   width: 100%;
-  max-width: 477px;
+  max-width: 500px;
   margin: 0 auto;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.slider.active {
+  left: 0;
 }
 
 .showBlock {
   display: flex;
-  overflow: hidden;
   width: 100%;
   margin-top: 40px;
   border-radius: 10px;
@@ -239,8 +246,11 @@ body {
 .showCurrency {
   display: flex;
   position: relative;
+  flex-direction: column;
   right: 0;
   transition: 0.5s;
+  margin: 15px;
+  width: 100%;
 }
 
 .showCurrency__get {
@@ -257,51 +267,6 @@ body {
 
 .current__currency {
   font-size: 35px;
-}
-
-/* BOTTOM BOTTOM */
-.bottomShowFulse {
-  display: flex;
-  width: 77px;
-  height: 50px;
-  background: rgb(115, 123, 136);
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 45px;
-  margin-right: 20px;
-}
-
-.bottomShowTrue {
-  display: flex;
-  width: 77px;
-  height: 50px;
-  background: rgb(115, 123, 136);
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 45px;
-  margin-left: 20px;
-}
-
-.bottomShowFulse:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  rotate: -45deg;
-}
-
-.bottomShowTrue:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  rotate: 135deg;
 }
 
 .popUp {
@@ -342,6 +307,30 @@ body {
   transition: 0.3s;
 }
 
+.popUpContent_EUR {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5000;
+  transition: 0.3s;
+}
+
+.popUpContent_PLN {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5000;
+  transition: 0.3s;
+}
+
 .aboutUSD {
   width: 80%;
   height: 80%;
@@ -350,10 +339,22 @@ body {
   border-radius: 30px;
   padding: 30px;
   font-size: 20px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .popUpContent.active {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.popUpContent_EUR.active {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.popUpContent_PLN.active {
   display: flex;
   position: absolute;
   left: 0;
@@ -375,28 +376,34 @@ body {
   .slider {
     display: flex;
     width: 100%;
-    max-width: 332px;
-    margin: 0 auto;
-  }
-  .bottomShowFulse {
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-    width: 55px;
-    height: 50px;
-    margin: 0;
-  }
-  .bottomShowTrue {
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-    width: 55px;
-    height: 50px;
-    margin: 0;
+    max-width: 500px;
+    margin: 20px auto;
   }
   .burger__menu {
     width: 80%;
     left: -80%;
+  }
+  .bottomSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    margin-top: 30px;
+    background: #737b88;
+  }
+  .bottomSlider:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(135deg);
+    transition: 0.3s;
+  }
+  .bottomSlider.active:after {
+    transform: rotate(-45deg);
   }
   /* ////////////////////////MENU//////////////////////// */
 }/*# sourceMappingURL=style.css.map */

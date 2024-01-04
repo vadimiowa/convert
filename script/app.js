@@ -45,8 +45,32 @@ popUpContent.addEventListener("click", function() {
     popUpContent.classList.remove("active");
 })
 
+let popUpContentEur = document.querySelector(".popUpContent_EUR");
+let popUpBottomEur = document.querySelector("#informEUR").addEventListener("click", function() {
+    popUpContentEur.classList.add("active");
+})
+
+popUpContentEur.addEventListener("click", function() {
+    popUpContentEur.classList.remove("active");
+})
+
+let popUpContentPln = document.querySelector(".popUpContent_PLN");
+let popUpBottomPln = document.querySelector("#informPLN").addEventListener("click", function() {
+    popUpContentPln.classList.add("active");
+})
+
+popUpContentPln.addEventListener("click", function() {
+    popUpContentPln.classList.remove("active");
+})
 
 
+let slid = document.querySelector(".slider");
+let bottomSlid = document.querySelector(".bottomSlider");
+
+bottomSlid.addEventListener("click", function() {
+    slid.classList.toggle("active");
+    bottomSlid.classList.toggle("active");
+});
 
 
 

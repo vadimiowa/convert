@@ -1,33 +1,8 @@
 .slider {
-    display: flex;
-    position: absolute;
-    bottom: 107px;
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    left: -100%;
-    transition: 0.3s;
-}
-.slider.active {
-    left: 0;
-}
-
-
-.showBlock {
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-
-.showCurrency {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    right: 0;
-    transition: 0.5s;
-    margin: 15px;
-    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .showCurrency__get {

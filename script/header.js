@@ -1,6 +1,7 @@
 const mood = document.querySelector(".header__mood");
 const body = document.querySelector("body");
 const convert = document.querySelector(".convert");
+const bottom = document.querySelector(".bottomSlider");
 
 mood.addEventListener("click", function() {
     let showCurrencyM = document.querySelectorAll(".showCurrency__get");
@@ -22,12 +23,14 @@ mood.addEventListener("click", function() {
         body.style.backgroundColor = "#303145";
         convert.style.backgroundColor = "#201a3c";
         mood.style.backgroundColor = "#fff";
+        bottom.style.backgroundColor = "#201a3c";
     } else {
         moon.style.display = "block";
         sun.style.display = "none";
         body.style.backgroundColor = "#fff";
         convert.style.backgroundColor = "#737b88";
         mood.style.backgroundColor = "#737b88";
+        bottom.style.backgroundColor = "#737b88";
     }
 })
 

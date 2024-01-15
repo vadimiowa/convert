@@ -66,13 +66,19 @@ popUpContentPln.addEventListener("click", function() {
 
 let slid = document.querySelector(".slider");
 let bottomSlid = document.querySelector(".bottomSlider");
-let back = document.querySelector(".burger__background");
+let back = document.querySelector(".burger__background_two");
 
 bottomSlid.addEventListener("click", function() {
     slid.classList.toggle("active");
     bottomSlid.classList.toggle("active");
     back.classList.toggle("active");
 });
+
+back.addEventListener("click", function() {
+    slid.classList.remove("active");
+    bottomSlid.classList.remove("active");
+    back.classList.remove("active");
+})
 
 
 

@@ -37,6 +37,7 @@
     margin-top: 30px;
     background: #737b88;
     position: relative;
+    border-radius: 10px;
 }
 
 .bottomSlider:after {
@@ -44,8 +45,8 @@
     display: block;
     width: 30px;
     height: 30px;
-    border-left: 2px solid #fff;
-    border-top: 2px solid #fff;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
     transform: rotate(135deg);
     transition: 0.3s;
 }
@@ -88,5 +89,20 @@
         transition: 0.5s;
         margin: 15px;
         width: 100%;
+    }
+
+    .block_one {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .block_two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .showCurrency__get {
+        padding: 12px 56px;
     }
 }
